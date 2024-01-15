@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dehraduna Dumplings - Menu</title>
+    <!-- Link your CSS file here -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="/">
+          <div class="logo">
+            <img src="./assets/DD Circle.png" alt="Dehraduna Dumplings" />
+          </div>
+        </a>
+        <div class="brand">
+          <h1>Dehraduna Dumplings</h1>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="#">Menu</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Menu content -->
+    <section id="menu">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu-categories">
+          <button onclick="showMenu('steamed')">Steamed Momos</button>
+          <button onclick="showMenu('fried')">Fried Momos</button>
+          <button onclick="showMenu('gravy')">Gravy Momos</button>
+          <button onclick="showMenu('easy-peasy')">Easy Peasy Momos</button>
+          <button onclick="showMenu('platters')">Platters</button>
+        </div>
+
+        <!-- Content sections for each menu category -->
+        <div id="steamed" class="menu-section">
+          <h3>Steamed Momos</h3>
+          <img src="./assets/DehraDuna/DSC_0005.jpg" />
+          <ul>
+            <li>
+              <h4>Vegetable Steamed Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>1990 Ft</p>
+            </li>
+            <li>
+              <h4>Paneer Steamed Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2190 Ft</p>
+            </li>
+            <li>
+              <h4>Pork Steamed Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2390 Ft</p>
+            </li>
+            <li>
+              <h4>Chicken Steamed Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2390 Ft</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="fried" class="menu-section" style="display: none">
+          <h3>Fried Momos</h3>
+          <div class="diagonal-split">
+            <div class="half-image">
+              <img src="./assets/DehraDuna/DSC_0005.jpg" alt="First Image" />
+            </div>
+            <div class="half-image">
+              <img src="./assets/DehraDuna/DSC_9851-1.jpg" alt="Second Image" />
+            </div>
+          </div>
+          <ul>
+            <li>
+              <h4>Vegetable Fried Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2290 Ft</p>
+            </li>
+            <li>
+              <h4>Paneer Fried Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2490 Ft</p>
+            </li>
+            <li>
+              <h4>Pork Fried Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2690 Ft</p>
+            </li>
+            <li>
+              <h4>Chicken Fried Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2690 Ft</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="gravy" class="menu-section" style="display: none">
+          <h3>Gravy Momos</h3>
+          <ul>
+            <li>
+              <h4>Vegetable Gravy Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2590 Ft</p>
+            </li>
+            <li>
+              <h4>Paneer Gravy Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2790 Ft</p>
+            </li>
+            <li>
+              <h4>Pork Gravy Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2990 Ft</p>
+            </li>
+            <li>
+              <h4>Chicken Gravy Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>2990 Ft</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="easy-peasy" class="menu-section" style="display: none">
+          <h3>Easy Peasy Momos</h3>
+          <ul>
+            <li>
+              <h4>Vegetable Easy Peasy Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>1390 Ft</p>
+            </li>
+            <li>
+              <h4>Paneer Easy Peasy Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>1490 Ft</p>
+            </li>
+            <li>
+              <h4>Pork Easy Peasy Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>1590 Ft</p>
+            </li>
+            <li>
+              <h4>Chicken Easy Peasy Dumpling</h4>
+              <p>
+                A delightful combination of fresh vegetables enclosed in a
+                tender steamed wrapper.
+              </p>
+              <p>1590 Ft</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="platters" class="menu-section" style="display: none">
+          <h3>Platters</h3>
+          <img src="./assets/DehraDuna/DSC_0011.jpg" />
+          <ul>
+            <li>
+              <h4>Vegan Delight</h4>
+              <p>
+                4 steam ed,4 pan fried,4 deep fried vegetable dum plings (4
+                gőzölt, 4 serpenyőben sült, 4 olajban sült zöldséges gom bóc)
+              </p>
+            </li>
+            <li>
+              <h4>Paneer Paradise</h4>
+              <p>
+                4 steam ed,4 pan fried,4 deep fried (4 gőzölt,4 serpenyőben
+                sült, 4 olajban sült)
+              </p>
+            </li>
+            <li>
+              <h4>Meat Lover Chicken</h4>
+              <p>
+                4 steam ed,4 pan fried,4 deep fried (4 gőzölt,4 serpenyőben
+                sült, 4 olajban sült)
+              </p>
+            </li>
+            <li>
+              <h4>Meat Lover Pork</h4>
+              <p>
+                4 steam ed,4 pan fried,4 deep fried (4 gőzölt,4 serpenyőben
+                sült, 4 olajban sült)
+              </p>
+            </li>
+            <li>
+              <h4>Steamed Platter</h4>
+              <p>
+                3 pcs each ofveg,paneer,chicken & pork (3 darab
+                zöldséges,paneer,csirkés és sertés -az elkészítésim ódotkedved
+                szerintválaszthatod!)
+              </p>
+            </li>
+            <li>
+              <h4>Fried Platter</h4>
+              <p>
+                3 pcs each ofveg,paneer,chicken & pork (3 darab
+                zöldséges,paneer,csirkés és sertés -az elkészítésim ódotkedved
+                szerintválaszthatod!)
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Connect with Us</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/DehraDunaDumplings"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/DehraDunaDumplings" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/DehraDunaDumplings"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <!-- Add more social media icons and links as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,392 @@
+@font-face {
+  font-family: forteForward;
+  src: url(./assets/FORTE.TTF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles for the navbar */
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 50px; /* Adjust height as needed */
+  /* Add more styles for the logo if required */
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family: forteForward;
+  color: #ff6700;
+  /* Add more styles for the cafe name if required */
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  /* Add more styles for the menu links if required */
+}
+
+.menu ul li a:hover {
+  color: #ff6600; /* Change color on hover */
+}
+
+/* Additional styles for the hero section */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-text span {
+  font-family: forteForward !important;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  /* Additional styles for the title */
+}
+
+.carousel-inner img {
+  height: 100vh; /* Set the height of the carousel images */
+  object-fit: cover;
+}
+
+/* You may need to adjust styles based on your design preferences */
+#about {
+  padding: 80px 0; /* Increase padding for a more spacious look */
+  background-color: #fff; /* Change background to white */
+  font-family: "Montserrat", sans-serif;
+  background-color: #ff6700;
+  color: white;
+}
+
+#about h2 {
+  font-size: 2.8rem; /* Slightly larger font size */
+  margin-bottom: 30px; /* More spacing below the heading */
+  font-family: forteForward;
+}
+
+#about h3 {
+  font-size: 2rem; /* Larger font size for subheadings */
+  margin-top: 40px; /* Increased top margin for subheadings */
+  margin-bottom: 20px; /* More spacing below subheadings */
+}
+
+#about p {
+  font-size: 1.2rem; /* Slightly larger font size for paragraphs */
+  line-height: 1.6; /* Improved line height for better readability */
+  margin-bottom: 20px; /* Increased bottom margin for paragraphs */
+}
+
+.video-fluid {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Adjusting the font color of icons */
+.icon-orange {
+  color: #ff6700;
+}
+
+/* Style for the Order Now section */
+#order-now {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#order-now h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#order-now .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  padding: 0 20px;
+  text-align: left;
+}
+
+.contact-info h1 {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-info svg {
+  color: #ff6700;
+}
+
+.contact-info a {
+  color: #ff6700;
+}
+
+.contact-info a:hover {
+  color: #ff6700;
+  text-decoration: none;
+}
+
+.contact-info img {
+  width: 40px;
+  margin: 10px 0;
+}
+
+.map-section {
+  padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .contact-info,
+  .map-section {
+    padding: 0;
+  }
+  .map-section iframe {
+    border: none;
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer h3 {
+  font-size: 1.8rem;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff6600; /* Change color on hover */
+}
+
+#menu {
+  margin-top: 1rem;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.menu-categories {
+  margin-bottom: 30px;
+}
+
+.menu-categories button {
+  margin: 5px;
+  padding: 10px 20px; /* Increase padding for larger clickable area */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 1.2rem; /* Increase font size for better readability */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.menu-categories button:focus {
+  outline: none; /* Remove the outline on focus */
+}
+
+.menu-categories button:hover,
+.menu-categories button.active {
+  color: #ff6700;
+  /* Other styles for the active state */
+}
+
+.menu-section {
+  padding: 30px; /* Increase padding within the menu sections */
+  background-color: #f8f8f8; /* Lighter background color for menu items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to menu items */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Include box-shadow in transition */
+}
+
+.menu-section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px; /* Apply border-radius only to the top corners */
+  object-fit: cover; /* Ensure the image covers the entire space */
+}
+
+.menu-section h3 {
+  margin-bottom: 2rem; /* Spacing at the bottom */
+  font-size: 2rem; /* Adjust font size */
+  font-weight: 600;
+  color: #ff6700; /* Use the primary color */
+  text-transform: uppercase; /* Convert text to uppercase */
+  border-bottom: 2px solid #ff6700; /* Add a bottom border */
+  padding-bottom: 0.5rem; /* Padding at the bottom of the heading */
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust spacing between cards */
+}
+
+.menu-section li {
+  width: 45%; /* Adjust width as needed for the cards */
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.menu-section li:hover {
+  transform: translateY(-5px); /* Adjust lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.menu-section h4 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.menu-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+.menu-section p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* CSS for diagonal split */
+.diagonal-split {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.half-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.half-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.half-image:nth-child(1) {
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  z-index: 2;
+}
+
+.half-image:nth-child(2) {
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  z-index: 1;
+  transform: translateY(-100%);
+}
+
+/* Add this media query at the bottom of your existing CSS */
+/* Mobile styles */
+@media (max-width: 767px) {
+  /* Hide the menu by default on mobile */
+  .menu ul {
+    display: none;
+  }
+
+  /* Show the hamburger menu button */
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1500; /* Ensure it's above other elements */
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+
+  /* Styles for the active state of the menu */
+  .menu ul.active {
+    display: block;
+  }
+}
+
+/* Larger screen styles */
+@media (min-width: 768px) {
+  /* Hide the hamburger menu button for larger screens */
+  .hamburger {
+    display: none;
+  }
+
+  /* Display the menu for larger screens */
+  .menu ul {
+    display: flex !important;
+  }
+}
